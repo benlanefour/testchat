@@ -1,16 +1,11 @@
 <html>
-  <style type='text/css'>
+ <style type='text/css'>
 	.embeddedServiceHelpButton .helpButton .uiButton {
-		background-color: #cc0001;
-		font-family: "Salesforce Sans", sans-serif;
+		background-color: #005290;
+		font-family: "Arial", sans-serif;
 	}
 	.embeddedServiceHelpButton .helpButton .uiButton:focus {
-		outline: 1px solid #cc0001;
-	}
-	@font-face {
-		font-family: 'Salesforce Sans';
-		src: url('https://c1.sfdcstatic.com/etc/clientlibs/sfdc-aem-master/clientlibs_base/fonts/SalesforceSans-Regular.woff') format('woff'),
-		url('https://c1.sfdcstatic.com/etc/clientlibs/sfdc-aem-master/clientlibs_base/fonts/SalesforceSans-Regular.ttf') format('truetype');
+		outline: 1px solid #005290;
 	}
 </style>
 
@@ -40,17 +35,17 @@
 
 		embedded_svc.init(
 			'https://canada-canon--partialsb.sandbox.my.salesforce.com',
-			'https://canada-canon--partialsb.sandbox.my.site.com/customersupportvforcesite',
+			'https://canada-canon--partialsb.sandbox.my.site.com/',
 			gslbBaseURL,
 			'00DVZ000000v0w9',
-			'Chat_Agents_Group',
+			'Github_Chat_Group',
 			{
 				baseLiveAgentContentURL: 'https://c.la12s-core1.sfdc-8tgtt5.salesforceliveagent.com/content',
 				deploymentId: '572VZ000000tJlB',
-				buttonId: '573VZ0000007uAL',
+				buttonId: '573VZ000000894X',
 				baseLiveAgentURL: 'https://d.la12s-core1.sfdc-8tgtt5.salesforceliveagent.com/chat',
-				eswLiveAgentDevName: 'Chat_Agents_Group',
-				isOfflineSupportEnabled: true
+				eswLiveAgentDevName: 'Github_Chat_Group',
+				isOfflineSupportEnabled: false
 			}
 		);
 	};
